@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyMovie - Search & Suggestions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MyMovie Dashboard</h1>
+                <!-- Search Section -->
+        <nav>
+            <a href="index.html" class="active">Movies Search & Suggestions</a>
+            <a href="watchlist.html">My Watchlist</a>
+        </nav>
+    </header>
+
+    <main>
+<main>
+        <!-- Seamless Search Bar (No Box Card) -->
+        <div style="margin-bottom: 30px;">
+            <h2 style="color: #f8fafc; font-size: 1.3rem; margin-bottom: 10px;">Search Movie</h2>
+            <div style="display: flex; gap: 10px; max-width: 100%;">
+                <input type="text" id="movieInput" placeholder="Enter movie title (e.g. Avatar)..." style="flex: 1; padding: 12px 16px; font-size: 1rem;">
+                <button id="searchBtn" style="padding: 12px 24px;">Search Movie</button>
+            </div>
+            <div id="apiError" class="error-msg"></div>
+        </div>
+
+        <!-- Movie Display  -->
+        <section class="card" id="resultCard" style="display: none;">
+            <h2>Movie Details</h2>
+            <div id="movieDisplay"></div>
+            <div id="suggestionBox" class="suggestion-highlight" style="margin-top: 15px;"></div>
+            <div id="actionContainer" style="margin-top: 15px;"></div>
+        </section>
+        <!-- Movie Display & Search Suggestion Box -->
+        <section class="card" id="resultCard" style="display: none;">
+            <h2>Movie Details</h2>
+            <div id="movieDisplay"></div>
+            <div id="suggestionBox" class="suggestion-highlight" style="margin-top: 15px;"></div>
+            <div id="actionContainer" style="margin-top: 15px;"></div>
+        </section>
+
+        <!-- Task 3: Interactive Genre Recommendation Generator with Posters -->
+        <div class="card">
+            <h3>Movie Recommendation Generator</h3>
+            
+            <!-- 1. Mood Selection -->
+            <label>Select Your Mood:</label>
+            <select id="moodSelect">
+                <option value="">-- Choose Genre/Mood --</option>
+                <option value="happy">Happy (Comedy)</option>
+                <option value="excited">Excited (Action)</option>
+                <option value="relaxed">Relaxed (Drama/Romance)</option>
+            </select><br><br>
+
+            <!-- 2. Minimum Rating Filter -->
+            <label>Minimum IMDb Rating (0 - 10):</label>
+            <input type="number" id="minRatingInput" min="0" max="10" step="0.5" placeholder="e.g. 7.0"><br><br>
+
+            <!-- 3. Available Time Filter -->
+            <label>Available Time (Minutes):</label>
+            <input type="number" id="maxTimeInput" placeholder="e.g. 150"><br><br>
+
+            <button id="generateBtn" style="margin-top: 10px;">Generate Recommendation</button>
+
+            <div id="categorySuggestionBox" style="margin-top: 15px; display: none;"></div>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>

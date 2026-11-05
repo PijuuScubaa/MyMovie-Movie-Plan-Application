@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyMovie - Watchlist Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MyMovie Watchlist</h1>
+        <nav>
+            <a href="index.html">Search & Suggestions</a>
+            <a href="watchlist.html" class="active">My Watchlist</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Read / Display Local Storage Records -->
+        <section class="card">
+            <h2>My Saved Watchlist</h2>
+            <ul id="watchlistTable"></ul>
+        </section>
+    </main>
+    <div class="card" style="margin-top: 20px;">
+        <h3 style="border-bottom: 2px solid #f59e0b; padding-bottom: 5px; margin-bottom: 15px;">Movie Runtime Calculator</h3>
+        <p style="color: #9ca3af; margin-bottom: 10px;">Calculate total viewing time for your saved watchlist movies!</p>
+        <button id="calcBtn" style="background-color: #ef4444; color: white; border: none; padding: 10px 15px; border-radius: 4px; cursor: pointer;">Calculate Total Hours</button>
+        <div id="calcResult" style="margin-top: 15px; font-weight: bold; color: #34d399;"></div>
+    </div>
+
+    <script src="watchlist.js"></script>
+</body>
+</html>

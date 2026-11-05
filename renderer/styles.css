@@ -1,0 +1,129 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0b0f19; /* Rich cinematic deep dark background */
+    color: #f8fafc;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #111827;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allows items to wrap nicely on smaller widths */
+    gap: 15px;
+    border-bottom: 1px solid #1f2937;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+}
+
+nav a {
+    color: #94a3b8;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+nav a:hover, nav a.active {
+    color: #f59e0b; /* Elegant cinema gold hover/active state */
+}
+
+main {
+    padding: 30px 20px;
+    max-width: 850px;
+    margin: auto;
+}
+
+.card {
+    background: #151c2c; /* Premium card background */
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    border: 1px solid #1f2937;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card h2 {
+    color: #f8fafc;
+    margin-top: 0;
+    font-size: 1.3rem;
+    border-bottom: 2px solid #f59e0b; /* Gold underline for titles */
+    padding-bottom: 8px;
+    display: inline-block;
+}
+
+.card p {
+    color: #94a3b8;
+}
+
+input, select {
+    padding: 10px 14px;
+    background-color: #0b0f19;
+    border: 1px solid #334155;
+    color: #f8fafc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input:focus, select:focus {
+    border-color: #f59e0b; /* Highlights input borders in gold when clicked */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #e50914; /* Netflix-style cinematic red */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #b91c1c;
+    transform: translateY(-1px);
+}
+
+.error-msg {
+    color: #f87171;
+    margin-top: 8px;
+    font-size: 0.9rem;
+}
+
+.suggestion-highlight {
+    background-color: #1e293b;
+    padding: 15px;
+    border-left: 4px solid #f59e0b; /* Cinema gold accent border */
+    border-radius: 6px;
+    color: #f8fafc;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    display: flex;
+    justify-content: space-between;
+    background: #1e293b;
+    padding: 12px 15px;
+    margin-bottom: 12px;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    align-items: center;
+}
