@@ -1,0 +1,15 @@
+{
+  "name": "mymovie-movie-plan-application",
+  "version": "1.0.0",
+  "description": "An Electron desktop application for searching movies, receiving personalized recommendations, and managing a local watchlist.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": ["electron", "movies", "crud", "api", "local-storage"],
+  "author": "HAFIZULLAH",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^30.0.0"
+  }
+}
